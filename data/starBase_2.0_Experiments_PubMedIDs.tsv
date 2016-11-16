@@ -1,0 +1,53 @@
+# List of PubMed IDs of all publications whose CLIP & CLASH data sets have been integrated in StarBase 2.0.
+#
+# Created by Alexander Junge on Sep 9, 2014 the following semi-automatic way (in lack of a fully automatic solution):
+# Download html source of http://starbase.sysu.edu.cn/download.php after opting to show 'All' entries. Save website source as StarBase.html.
+# Then the following command yields the list below:
+# cat StarBase.html | perl -ne '/http:\/\/www\.ncbi\.nlm\.nih\.gov\/pubmed\/(\d+)/ && print $1 . "\n"' | sort | uniq > starBase_2.0_Experiments_PubMedIDs.tsv
+# 
+# Also added PubMed IDs of the two StarBase Papers:
+# http://www.ncbi.nlm.nih.gov/pubmed/21037263
+# http://www.ncbi.nlm.nih.gov/pubmed/24297251
+19116412
+19536157
+20062054
+20371350
+20601959
+21037263
+21048981
+21258322
+21358640
+21358643
+21572407
+21633356
+22012620
+22081015
+22100165
+22152485
+22291592
+22473208
+22681889
+22796965
+22802532
+22829983
+22844102
+22884328
+22901804
+22927820
+22959275
+22998874
+23085716
+23142080
+23235829
+23313552
+23374342
+23389473
+23446348
+23481595
+23562324
+23622248
+23792593
+23824327
+23832275
+24141703
+24297251
