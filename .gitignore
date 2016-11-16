@@ -1,0 +1,11 @@
+# Large data files are written to these directories
+master_files/
+data/
+id_dictionaries/
+figures/
+rawscore_files/
+download_files/
+
+# Files generated while the program is executed
+*.pyc
+make_master_files.log
