@@ -9,7 +9,7 @@ To create the interaction files, please follow subsequent instructions.
 
 ## Checkout repository
 
-Checkout repository using mercurial (hg) version control system.
+Checkout repository using git via ssh.
 Via ssh:
 
 ```
@@ -17,7 +17,7 @@ git clone git@github.com:JungeAlexander/rain.git
 cd rain
 ```
 
-Or, equivalently, via ssh:
+Or, equivalently, via https:
 
 ```
 git clone https://github.com/JungeAlexander/rain.git
@@ -181,32 +181,3 @@ Contributors:
 - Christopher T. Workman
 - Lars Juhl Jensen
 - Jan Gorodkin
-
-## Appendix
-
-### Updating RAIN dependencies
-
-After updating dependencies in conda rain environment execute the following:
-
-```
-conda env export > environment.yml
-
-conda list --explicit > explicit-spec-file.txt
-```
-
-The push to the changes to the source code repository to propagate changes to collaborators.
-
-## Updating  RAIN virtual environment
-
-After changing dependencies (see above) and pulling the newest dependency specifications
-from the source code repository, run the following:
-
-```
-conda-env  update -f explicit-spec-file.txt
-```
-
-or
-
-```
-conda-env  update -f environment.yml
-```
